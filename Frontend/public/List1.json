@@ -1,0 +1,89 @@
+[
+    {
+      "id": 1,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "paid",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 2,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 3,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 4,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 5,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 6,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 7,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 8,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free","image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 9,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 10,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    },
+    {
+      "id": 11,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://m.media-amazon.com/images/I/51dOacmuzvL._SY445_SX342_.jpg"
+    }
+]

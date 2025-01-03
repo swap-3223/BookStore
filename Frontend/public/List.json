@@ -1,0 +1,89 @@
+[
+    {
+      "id": 1,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "paid",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 2,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 3,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 4,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 5,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 6,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 7,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 8,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free","image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 9,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 10,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    },
+    {
+      "id": 11,
+      "name":"Fiction",
+      "title": "To Kill a Mockingbird",
+      "price": 199,
+      "category": "free",
+      "image": "https://blog-cdn.reedsy.com/directories/gallery/241/large_36dc2bfa3ecfa29a41812207f76df7a8.jpg"
+    }
+]
