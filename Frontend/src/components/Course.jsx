@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import List1 from '../../public/List1.json'
+import List from '../../public/List.json'
 import Cards from './Cards'
 import {Link} from 'react-router-dom'
 import { ThemeContext } from '../context/ThemeContext'
@@ -16,7 +16,7 @@ function Course() {
                 </Link>
             </div>
             <div className='mt-12 grid grid-cols-1 md:grid-cols-4'>
-                {List1.map((item)=>(
+                {List.map((item)=>(
                 <Cards key={item.id} item={item}/>
                 ))}
             </div>
