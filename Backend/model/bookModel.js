@@ -1,11 +1,11 @@
 import mongoose from "mongoose"
 
 const bookSchema = mongoose.Schema({
-    name:String,
-    category:String,
-    price:Number,
-    tittle:String,
-    image:String
+    name: String,
+    title: String,
+    price: Number,
+    category: String,
+    image: String
 });
 
 const Book = mongoose.model("Book",bookSchema);

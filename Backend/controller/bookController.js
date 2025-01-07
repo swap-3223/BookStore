@@ -1,6 +1,6 @@
 import Book from "../model/bookModel.js";
 
- const getBooks = async(req,res)=>{
+ const getBook   = async(req,res)=>{
     try {
         const book = await Book.find();
         res.status(200).json(book)
@@ -9,4 +9,4 @@ import Book from "../model/bookModel.js";
         res.status(500).json(error)
     }
 };
-export default getBooks
+export default getBook;
