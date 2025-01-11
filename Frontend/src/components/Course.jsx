@@ -1,10 +1,13 @@
-import React, { useContext } from 'react'
-import List from '../../public/List.json'
+import React, { useContext, useEffect, useState } from 'react'
+// import List from '../../public/List.json'
 import Cards from './Cards'
-import {Link} from 'react-router-dom'
+import {data, Link} from 'react-router-dom'
 import { ThemeContext } from '../context/ThemeContext'
 function Course() {
-  const {theme}=useContext(ThemeContext)
+  const {theme, book}=useContext(ThemeContext);
+  const filterData = book.filter((data)=>{
+    return data.category === "paid"
+ })
   return (
     <>
         <div className={`max-w-screen-2xl container mx-auto  md:px-20 px-4  ${theme === 'dark' ? 'bg-gray-950' : 'bg-white text-gray-950'}`}>
@@ -16,7 +19,7 @@ function Course() {
                 </Link>
             </div>
             <div className='mt-12 grid grid-cols-1 md:grid-cols-4'>
-                {List.map((item)=>(
+                {filterData.map((item)=>(
                 <Cards key={item.id} item={item}/>
                 ))}
             </div>

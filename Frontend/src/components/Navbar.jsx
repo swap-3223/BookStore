@@ -5,8 +5,8 @@ import Login from "../pages/Login";
 
 function Navbar() {
 
-  const {theme, handleTheme} = useContext(ThemeContext)
-  
+  const {theme, handleTheme, authUser, setAuthUser} = useContext(ThemeContext)
+  console.log(authUser);
   const [sticky,setSticky] = useState(false)
   useEffect(()=>{
     const handleScroll =()=>{

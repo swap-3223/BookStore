@@ -2,9 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Login from './Login';
 import { useForm } from "react-hook-form";
-
-
-
+import axios from 'axios';
+import toast from 'react-hot-toast';
 function Signup() {
     const {
         register,
@@ -12,9 +11,63 @@ function Signup() {
         formState: { errors },
       } = useForm();
     
-      const onSubmit = (data) => {
-        console.log(data);
-    
+// using fetch 
+      // const onSubmit = async (data) => {
+      //   const userInfo={
+      //     fullName: data.fullName,
+      //     email:data.email,
+      //     password:data.password
+      //   }
+      //   await fetch('http://localhost:3000/user/Signup',
+      //     {method: "post", 
+      //       headers: {
+      //     "Content-Type": "application/json", // Specify the content type
+      //   },
+      //   body: JSON.stringify(userInfo),
+      // },)
+      //   .then((res)=>{
+      //     console.log(res.data)
+      //     if(res.data)
+      //       alert('signup successful')
+      //   })
+      //   .catch((err)=>{
+      //     console.log(err)
+      //     alert("err: ", err)
+      //   })
+      //   // Close the dialog after successful submission
+      //   document.getElementById("my_modal_3").close();
+      // };
+
+//using axios
+ const onSubmit = async (data) => {
+        const userInfo={
+          fullName: data.fullName,
+          email:data.email,
+          password:data.password
+        }
+        await axios.post("http://localhost:3000/user/Signup",userInfo)
+        .then((res)=>{
+          console.log(res.data)
+          if(res.data){
+            // alert('signup successful')
+        toast.success('Signup Successful');
+
+          }
+        localStorage.setItem("User",JSON.stringify(res.data.user))
+
+        })
+        .catch((err)=>{
+          
+          //   console.log(err)
+          // alert("Error: "+" user already exist")
+          if(err.response){
+            console.log(err)
+            // alert("error: "+ err.response.data.message)
+            toast.error("error: "+ err.response.data.message);
+
+          }
+          
+        })
         // Close the dialog after successful submission
         document.getElementById("my_modal_3").close();
       };
@@ -30,10 +83,10 @@ function Signup() {
           type="text"
           placeholder="Enter your Name"
           className="text-sm px-5 py-1 h-10 w-full bg-inherit outline-none border border-gray-600 rounded-md"
-          {...register("name", { required: "Name is required" })}
+          {...register("fullName", { required: "Name is required" })}
         />
         <br/>
-            {errors.name && (
+            {errors.fullName && (
               <span className="text-red-500 text-sm ml-10">{errors.name.message}</span>
             )}
         <h2 className="py-4">Email</h2>

@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
-import List from '../../public/List.json'
+// import List from '../../public/List.json'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Cards from './Cards';
 import { ThemeContext } from '../context/ThemeContext';
 function FreeBook() {
-  const {theme}=useContext(ThemeContext)
-    const filterData = List.filter((data)=>{
+  const {theme,book}=useContext(ThemeContext)
+    const filterData = book.filter((data)=>{
        return data.category === "free"
     })
     // console.log(filterData);
