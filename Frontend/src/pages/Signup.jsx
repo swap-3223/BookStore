@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import Login from './Login';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
 import toast from 'react-hot-toast';
 function Signup() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || '/'
     const {
         register,
         handleSubmit,
@@ -49,9 +52,9 @@ function Signup() {
         .then((res)=>{
           console.log(res.data)
           if(res.data){
-            // alert('signup successful')
-        toast.success('Signup Successful');
-
+          toast.success('Signup Successful');
+          navigate(from,{replace: true})
+          window.location.reload();
           }
         localStorage.setItem("User",JSON.stringify(res.data.user))
 
@@ -72,7 +75,7 @@ function Signup() {
         document.getElementById("my_modal_3").close();
       };
   return (
-    <div className='flex justify-center items-center h-screen  bg-gray-800'>
+    <div className='sign-up flex justify-center items-center h-screen  bg-gray-800'>
       <form onSubmit={handleSubmit(onSubmit)} className="modal-box relative  bg-gray-800  text-white p-6 rounded-lg shadow-2xl shadow-gray-950">
         <Link to='/' className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
           ✕

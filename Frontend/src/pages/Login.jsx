@@ -75,19 +75,18 @@ function Login() {
       if(res.data){
         // alert('Login successful')
         toast.success('Login Successful');
-
+        setTimeout(() => {
+        window.location.reload();
+        }, 1000);
       }
-    localStorage.setItem("User",JSON.stringify(res.data.user))
-      
+    localStorage.setItem("User",JSON.stringify(res.data.user))  
     })
     .catch((err)=>{
       if(err.response){
         console.log(err)
         // alert("error: "+ err.response.data.message)
         toast.error("error: "+ err.response.data.message);
-        
       }
-      
     })
     // Close the dialog after successful submission
     document.getElementById("my_modal_3").close();
