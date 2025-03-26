@@ -129,7 +129,6 @@ function Navbar() {
     viewBox="0 0 24 24"
     // onClick={()=>setTheme(theme==="dark" ? "light" : "dark")}
     onClick={handleTheme}
-
     >
 
     <path
